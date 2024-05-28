@@ -1,0 +1,59 @@
+.App-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.Header{
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: 'Racing Sans One';
+}
+
+.Header::before,
+.Header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10%; /* Çizgi uzunluğunu ayarlayabilirsiniz */
+    border-bottom: 1.5px solid #f7f7f7; /* Çizgi özellikleri */
+}
+
+.Header::before {
+    right: 100%; /* Sol tarafa çizgi ekler */
+    margin-right: 10px; /* Sol çizginin sağa olan boşluğu */
+}
+
+.Header::after {
+    left: 100%; /* Sağ tarafa çizgi ekler */
+    margin-left: 10px; /* Sağ çizginin sola olan boşluğu */
+}
+
+.Header-icon{
+  margin-top: -20px;
+  position: relative;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+}
+
+.Header-icon::before,
+.Header-icon::after
+{
+  content: '';
+  position: absolute;
+  top: 55%;
+  width: 300px;
+  border-bottom: 1.5px solid #f7f7f7;
+}
+.Header-icon::before{
+  right: 100%;
+  margin-right: 20px;
+}
+.Header-icon::after{
+  left: 100%;
+  margin-left: 20px;
+}

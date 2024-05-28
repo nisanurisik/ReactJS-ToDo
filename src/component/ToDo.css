@@ -1,0 +1,78 @@
+#Form-tasks {
+  display: flex;
+  justify-content: center; /* Merkezde hizala */
+  margin-top: 50px; /* Boşluk ekle */
+}
+
+.left-section, .right-section {
+  width: 50%; /* Sayfayı ikiye bölecek şekilde genişlik ver */
+}
+
+.left-section {
+  margin-left: 20px; /* Sağ taraftan boşluk bırak */
+}
+
+.right-section {
+  margin-right: 20px; /* Sol taraftan boşluk bırak */
+}
+
+.Form-header {
+  color: #f7f7f7;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Racing Sans One';
+  font-size: 2rem;
+}
+
+.Form-header-completed {
+  color: #f7f7f7;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Racing Sans One';
+  font-size: 2rem;
+}
+
+.Form-todo-label, .Form-todo-label-completed {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%; /* Genişlik tümü */
+  margin-bottom: 10px;
+  color: #f7f7f7;
+  padding: 13px;
+  border: 1px solid #54357c;
+  border-radius: 10px;
+  box-sizing: border-box; /* Padding ve border dahil genişlik hesaplama */
+}
+
+.Form-todo-label-completed {
+  text-align: center; /* Tamamlanan görevlerin sola yaslanması */
+}
+
+.Form-icon {
+  display: flex;
+  align-items: center;
+}
+
+.Form-icon:hover {
+  cursor: pointer;
+}
+
+.Form-icon-trash {
+  margin-left: 20px;
+  color: rgb(165, 60, 60);
+}
+
+.Form-icon-check {
+  margin-left: 20px;
+  color: rgb(55, 151, 55);
+}
+
+.Form-todo-label.completed span {
+  text-decoration: line-through;
+}
+
+.completed {
+  display: flex;
+  justify-content: flex-end; /* Tamamlanan görevlerin sağa yaslanması */
+}

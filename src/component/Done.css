@@ -1,0 +1,19 @@
+.Form-header{
+  color: #f7f7f7;
+  text-align: center;
+
+}
+
+.Form-done-label{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 10px;
+  color: #f7f7f7;
+  padding: 13px;
+  border: 1px solid #54357c;
+  border-radius: 10px;
+  margin: 0px 10px 30px 10px;
+  text-decoration: line-through;
+}
+
